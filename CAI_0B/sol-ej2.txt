@@ -1,0 +1,79 @@
+Konstantinos
+Luis
+Ray
+
+
+PS C:\Users\ADMiN\US\SSII\CAI_0B> python arbol2.py
+================================================================================
+ ARBOL DE MERKLE ORIGINAL
+================================================================================
+Entrada (Hojas 1-8): A  I  L  N  O  R  S  T
+
+[*] Hojas (Nivel 0):
+    - Nodo [0][0]: 7fc56270e7a70fa81a5935b72eacbe29
+    - Nodo [0][1]: dd7536794b63bf90eccfd37f9b147d7f
+    - Nodo [0][2]: d20caec3b48a1eef164cb4ca81ba2587
+    - Nodo [0][3]: 8d9c307cb7f3c4a32822a51922d1ceaa
+    - Nodo [0][4]: f186217753c37b9b9f958d906208506e
+    - Nodo [0][5]: e1e1d3d40573127e9ee0480caf1283d6
+    - Nodo [0][6]: 5dbc98dcc983a70728bd082d1a47546e
+    - Nodo [0][7]: b9ece18c950afbfa6b0fdbfa4ff731d3
+
+[*] Nivel 1 (Pares):
+    - Nodo [1][0]: 4c03c5ddaa5d79dfb403829882d7afa1
+    - Nodo [1][1]: 94bc49f1be10f290377acdb59476e0bb
+    - Nodo [1][2]: a18378c73b957f7986e3c7afb346ad47
+    - Nodo [1][3]: 45775e398befd4b39c5ca6e132b8b5bf
+
+[*] Nivel 2 (Subramas):
+    - Nodo [2][0]: ebd217460529bdd32d5d907dce30b906
+    - Nodo [2][1]: e6c1ed52e988db44254e9eb3f801e9e2
+
+[*] Raíz (Nivel 3):
+    - Nodo [3][0]: 0e5c37db70512ff1e74b743d24d9024d
+
+[>>>] RAIZ DE MERKLE: 0e5c37db70512ff1e74b743d24d9024d
+
+================================================================================
+ ARBOL DE MERKLE MODIFICADO (HOJA 7: 'S' -> 'U')
+================================================================================
+Entrada (Hojas 1-8): A  I  L  N  O  R  U  T
+
+[*] Hojas (Nivel 0):
+    - Nodo [0][0]: 7fc56270e7a70fa81a5935b72eacbe29
+    - Nodo [0][1]: dd7536794b63bf90eccfd37f9b147d7f
+    - Nodo [0][2]: d20caec3b48a1eef164cb4ca81ba2587
+    - Nodo [0][3]: 8d9c307cb7f3c4a32822a51922d1ceaa
+    - Nodo [0][4]: f186217753c37b9b9f958d906208506e
+    - Nodo [0][5]: e1e1d3d40573127e9ee0480caf1283d6
+    - Nodo [0][6]: 4c614360da93c0a041b22e537de151eb
+    - Nodo [0][7]: b9ece18c950afbfa6b0fdbfa4ff731d3
+
+[*] Nivel 1 (Pares):
+    - Nodo [1][0]: 4c03c5ddaa5d79dfb403829882d7afa1
+    - Nodo [1][1]: 94bc49f1be10f290377acdb59476e0bb
+    - Nodo [1][2]: a18378c73b957f7986e3c7afb346ad47
+    - Nodo [1][3]: 87a36d0803334797b7d3482b72131099
+
+[*] Nivel 2 (Subramas):
+    - Nodo [2][0]: ebd217460529bdd32d5d907dce30b906
+    - Nodo [2][1]: 1840e769e54ededd30eaa70c9c4362d9
+
+[*] Raíz (Nivel 3):
+    - Nodo [3][0]: 430b43c05f6752cf1b30354b381db387
+
+[>>>] RAIZ DE MERKLE: 430b43c05f6752cf1b30354b381db387
+
+================================================================================
+ RESUMEN DE MODIFICACIONES: RUTA AFECTADA HACIA LA RAIZ
+================================================================================
+Nodo                   | Hash Original                    | Hash Recalculado                
+--------------------------------------------------------------------------------------------
+H7         (Hoja 7)    | 5dbc98dcc983a70728bd082d1a47546e | 4c614360da93c0a041b22e537de151eb
+H78        (Nivel 1)   | 45775e398befd4b39c5ca6e132b8b5bf | 87a36d0803334797b7d3482b72131099
+H5678      (Nivel 2)   | e6c1ed52e988db44254e9eb3f801e9e2 | 1840e769e54ededd30eaa70c9c4362d9
+H12345678  (Raíz Merkle) | 0e5c37db70512ff1e74b743d24d9024d | 430b43c05f6752cf1b30354b381db387
+--------------------------------------------------------------------------------------------
+
+[+] Total de hashes que ha sido necesario recalcular: 4 de 15 nodos.
+[+] Observación: El 73.3% del árbol permanece intacto (propiedad de verificación eficiente).

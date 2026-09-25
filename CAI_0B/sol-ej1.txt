@@ -1,0 +1,32 @@
+┌──(kali㉿kali)-[~/Desktop/SSII/CAI_0B]
+└─$ chmod +x hello erase
+                                                                             
+┌──(kali㉿kali)-[~/Desktop/SSII/CAI_0B]
+└─$ md5sum hello      
+da5c61e1edc0f18337e46418e48c1290  hello
+                                                                             
+┌──(kali㉿kali)-[~/Desktop/SSII/CAI_0B]
+└─$ md5sum erase 
+da5c61e1edc0f18337e46418e48c1290  erase
+                                                                             
+┌──(kali㉿kali)-[~/Desktop/SSII/CAI_0B]
+└─$ cmp -l hello erase | wc -l
+6
+                                                                             
+┌──(kali㉿kali)-[~/Desktop/SSII/CAI_0B]
+└─$ ./hello
+Hello, world!
+
+(press enter to quit)
+                                                                             
+┌──(kali㉿kali)-[~/Desktop/SSII/CAI_0B]
+└─$ ./erase
+This program is evil!!!
+Erasing hard drive...1Gb...2Gb... just kidding!
+Nothing was erased.
+
+(press enter to quit) 
+                                                                             
+┌──(kali㉿kali)-[~/Desktop/SSII/CAI_0B]
+└─$ 
+        
