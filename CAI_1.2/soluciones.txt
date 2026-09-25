@@ -1,0 +1,20 @@
+REGISTRO DE CLAVES HMAC RECUPERADAS - CAI 1 Parte 2 (Enunciado B)
+==================================================================
+Modo Hashcat: -m 1450 (HMAC-SHA256, key = $pass)
+Ataque: Fuerza bruta exhaustiva (-a 3), mascara ?b?b?b?b (2^32 combinaciones, byte crudo 0x00-0xff)
+Hardware: Kali Linux (CPU-only, OpenCL/PoCL), Intel Core i7-1065G7, sin GPU
+Velocidad benchmark limpio (-b): 14717.1 kH/s
+Tiempo total de ataque (3 claves): 9 min 4 s (recuperadas 3/3, 93.66% del keyspace recorrido)
+
+Mensaje                        | HMAC (hex)                                                       | Clave (hex) | Clave (repr.)
+--------------------------------------------------------------------------------------------------------------------------------
+34567893 987344 120            | 08bc69199509e86910cdd347399b15242d4f5655160d283a7baa08bb662fe599 | 20216767    | " !gg" (ASCII imprimible)
+34567894 986454 10             | c1eedb4ba2e22a439d678d3c217c917865127b1366d05ee425739e4067827f22 | 99fa46a6    | binario no imprimible
+34537895 957769 110            | 6d3e367cabb562fa6bc4c1ae9ff49421aad00bf21efde9ad457418c48ad18372 | deadbeef    | binario (patron reconocible "deadbeef")
+
+Verificacion cruzada (openssl dgst -sha256 -mac HMAC -macopt hexkey:<clave_hex>):
+  Mensaje 1 -> coincide con el HMAC recibido. OK
+  Mensaje 2 -> coincide con el HMAC recibido. OK
+  Mensaje 3 -> coincide con el HMAC recibido. OK
+
+Documento de acceso restringido. Contenido en claro solo para verificacion interna del equipo auditor.

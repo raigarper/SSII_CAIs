@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "mensaje": "34567893 987344 120",
+        "hmac_b64": "CLxpGZUJ6GkQzdNHOZsVJC1PVlUWDSg6e6oIu2Yv5Zk=",
+        "hmac_hex": "08bc69199509e86910cdd347399b15242d4f5655160d283a7baa08bb662fe599",
+        "longitud_bytes": 32,
+        "longitud_bits": 256,
+        "algoritmo_deducido": "HMAC-SHA-256",
+        "formato_hashcat_m1450": "08bc69199509e86910cdd347399b15242d4f5655160d283a7baa08bb662fe599:34567893 987344 120"
+    },
+    {
+        "id": 2,
+        "mensaje": "34567894 986454 10",
+        "hmac_b64": "we7bS6LiKkOdZ408IXyReGUSexNm0F7kJXOeQGeCfyI=",
+        "hmac_hex": "c1eedb4ba2e22a439d678d3c217c917865127b1366d05ee425739e4067827f22",
+        "longitud_bytes": 32,
+        "longitud_bits": 256,
+        "algoritmo_deducido": "HMAC-SHA-256",
+        "formato_hashcat_m1450": "c1eedb4ba2e22a439d678d3c217c917865127b1366d05ee425739e4067827f22:34567894 986454 10"
+    },
+    {
+        "id": 3,
+        "mensaje": "34537895 957769 110",
+        "hmac_b64": "bT42fKu1YvprxMGun/SUIarQC/Ie/emtRXQYxIrRg3I=",
+        "hmac_hex": "6d3e367cabb562fa6bc4c1ae9ff49421aad00bf21efde9ad457418c48ad18372",
+        "longitud_bytes": 32,
+        "longitud_bits": 256,
+        "algoritmo_deducido": "HMAC-SHA-256",
+        "formato_hashcat_m1450": "6d3e367cabb562fa6bc4c1ae9ff49421aad00bf21efde9ad457418c48ad18372:34537895 957769 110"
+    }
+]
