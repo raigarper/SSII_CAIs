@@ -1,0 +1,15 @@
+
+============================================================
+ RESULTADOS MATEMÁTICOS PARA EL INFORME
+============================================================
+Velocidad medida en Kali: 14,304,000 H/s
+Tiempo medio (clave 32 bits): 150.1317 s (2.50 min)
+Tiempo peor (clave 32 bits) : 300.2634 s (5.00 min)
+------------------------------------------------------------
+Velocidad Atacante (x1000)  : 14,304,000,000 H/s
+Tiempo medio Atacante (32b) : 0.150132 s
+------------------------------------------------------------
+Bits mínimos teóricos para 10 años: 62 bits
+Recomendación estándar del NIST/RFC: 128 o 256 bits
+============================================================
+
