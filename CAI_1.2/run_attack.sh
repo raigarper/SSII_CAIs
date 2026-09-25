@@ -15,9 +15,10 @@ read -p "Introduce el modo (-m): " MODO
 echo "[*] Lanzando benchmark de velocidad..."
 hashcat -m $MODO -b -D 1 -O | grep -E "Speed.#1|Speed.#"
 
-echo "[*] Ejecutando ataque de fuerza bruta sobre claves de 4 bytes..."
-# Prueba primero 4 caracteres imprimibles (?a?a?a?a)
-hashcat -m $MODO -a 3 -D 1 -O hashes_hmac.txt ?a?a?a?a --outfile soluciones_hmac.txt
+echo "[*] Ejecutando ataque de fuerza bruta sobre claves de 4 bytes (2^32 combinaciones)..."
+# Clave de 32 bits = 4 bytes crudos, no necesariamente ASCII imprimible.
+# ?b cubre el rango completo 0x00-0xff, por lo que ?b?b?b?b agota el espacio 2^32.
+hashcat -m $MODO -a 3 -D 1 -O hashes_hmac.txt ?b?b?b?b --outfile soluciones_hmac.txt
 
 echo "[+] Ataque finalizado. Resultados:"
 cat soluciones_hmac.txt
