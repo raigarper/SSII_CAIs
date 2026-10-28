@@ -1,0 +1,127 @@
+2026-10-23 11:51:20,522 DEBUG pl.edu.zut.wi.vsl.app.Flow:240 - Input number 0 stopped.
+2026-10-23 11:51:20,523 INFO  pl.edu.zut.wi.vsl.app.FlowMonitor:90 - Stopping all threads, ending experiment
+2026-10-23 11:51:20,524 DEBUG pl.edu.zut.wi.vsl.app.gui.DeskItem:345 - global mode: None
+2026-10-23 11:51:20,526 DEBUG pl.edu.zut.wi.vsl.app.MainWindow:138 - Experiment stopped.
+2026-10-23 11:52:04,400 INFO  pl.edu.zut.wi.vsl.app.gui.DeskItem:218 - BSM-SVM - removing
+2026-10-23 11:52:07,310 INFO  pl.edu.zut.wi.vsl.app.gui.DropHandler:822 - Dropped LSB.E
+2026-10-23 11:52:10,148 INFO  pl.edu.zut.wi.vsl.app.gui.DropHandler:822 - Dropped LSB.D
+2026-10-23 11:52:12,133 INFO  pl.edu.zut.wi.vsl.app.gui.DeskItem:210 - Connecting...
+2026-10-23 11:52:12,496 DEBUG pl.edu.zut.wi.vsl.app.gui.DeskItem:354 - current mode: None
+2026-10-23 11:52:17,122 INFO  pl.edu.zut.wi.vsl.app.gui.DeskItem:210 - Connecting...
+2026-10-23 11:52:17,122 DEBUG pl.edu.zut.wi.vsl.app.gui.DeskItem:517 - LSB.D has input
+2026-10-23 11:52:17,506 DEBUG pl.edu.zut.wi.vsl.app.gui.DeskItem:354 - current mode: None
+2026-10-23 11:52:18,849 WARN  pl.edu.zut.wi.vsl.app.gui.Desktop:257 - You must specify message for every steganographic encoder.
+2026-10-23 11:52:37,348 WARN  pl.edu.zut.wi.vsl.app.gui.Desktop:257 - You must specify message for every steganographic encoder.
+2026-10-23 11:53:53,318 WARN  pl.edu.zut.wi.vsl.app.gui.Desktop:257 - You must specify message for every steganographic encoder.
+2026-10-23 11:56:49,895 INFO  pl.edu.zut.wi.vsl.app.gui.DropHandler:822 - Dropped Input
+2026-10-23 11:56:52,836 INFO  pl.edu.zut.wi.vsl.app.gui.DropHandler:822 - Dropped LSB.D
+2026-10-23 11:56:59,810 INFO  pl.edu.zut.wi.vsl.app.gui.DropHandler:822 - Dropped Output
+2026-10-23 11:57:09,691 INFO  pl.edu.zut.wi.vsl.app.gui.DeskItem:218 - Output - removing
+2026-10-23 11:57:11,558 INFO  pl.edu.zut.wi.vsl.app.gui.DropHandler:822 - Dropped Report
+2026-10-23 11:57:13,245 INFO  pl.edu.zut.wi.vsl.app.gui.DropHandler:822 - Dropped Display
+2026-10-23 11:57:24,221 INFO  pl.edu.zut.wi.vsl.app.gui.DeskItem:218 - Display - removing
+2026-10-23 11:57:27,439 INFO  pl.edu.zut.wi.vsl.app.gui.DeskItem:210 - Connecting...
+2026-10-23 11:57:27,731 DEBUG pl.edu.zut.wi.vsl.app.gui.DeskItem:354 - current mode: None
+2026-10-23 11:58:01,338 INFO  pl.edu.zut.wi.vsl.app.gui.panels.InputPanel:144 - Added 1 files to list
+2026-10-23 11:58:10,257 INFO  pl.edu.zut.wi.vsl.app.gui.DeskItem:210 - Connecting...
+2026-10-23 11:58:10,257 DEBUG pl.edu.zut.wi.vsl.app.gui.DeskItem:517 - LSB.D has input
+2026-10-23 11:58:10,773 DEBUG pl.edu.zut.wi.vsl.app.gui.DeskItem:354 - current mode: None
+2026-10-23 11:58:43,105 INFO  pl.edu.zut.wi.vsl.app.gui.panels.ReportPanel:149 - Selected output directory: C:\Users\ADMiN\US\SSII\CAIs\CAI_2.2\trabajo\reportes
+2026-10-23 11:58:52,632 DEBUG pl.edu.zut.wi.vsl.app.gui.DeskItem:345 - global mode: Executing
+2026-10-23 11:58:52,634 DEBUG pl.edu.zut.wi.vsl.app.MainWindow:184 - Starting experiment. Inputs: 1 Executions to perform: 2
+2026-10-23 11:58:52,635 INFO  pl.edu.zut.wi.vsl.app.Flow:113 - Input 0 starting its 1 iterations.
+2026-10-23 11:58:52,651 DEBUG pl.edu.zut.wi.vsl.app.Flow:137 - Creating new image: type: 5, isAlphaPremultiplied: false, path: C:\Users\ADMiN\US\SSII\CAIs\CAI_2.2\Dibujo.bmp
+2026-10-23 11:58:52,652 INFO  pl.edu.zut.wi.vsl.app.Flow:161 - Starting 0 iteration, Input -> LSB.D
+2026-10-23 11:58:52,653 INFO  pl.edu.zut.wi.vsl.modules.steganography.lsb.LsbImpl:348 - Decoding, size of message [B]:37099
+2026-10-23 11:58:52,669 INFO  pl.edu.zut.wi.vsl.app.Flow:161 - Starting 1 iteration, LSB.D -> Report
+2026-10-23 11:58:52,678 DEBUG pl.edu.zut.wi.vsl.app.Flow:240 - Input number 0 stopped.
+2026-10-23 11:58:52,679 INFO  pl.edu.zut.wi.vsl.app.FlowMonitor:90 - Stopping all threads, ending experiment
+2026-10-23 11:58:52,680 DEBUG pl.edu.zut.wi.vsl.app.gui.DeskItem:345 - global mode: None
+2026-10-23 11:58:52,683 DEBUG pl.edu.zut.wi.vsl.app.MainWindow:138 - Experiment stopped.
+2026-10-23 12:04:20,620 INFO  pl.edu.zut.wi.vsl.app.gui.DeskItem:218 - Report - removing
+2026-10-23 12:04:22,568 INFO  pl.edu.zut.wi.vsl.app.gui.DropHandler:822 - Dropped Output
+2026-10-23 12:04:24,794 INFO  pl.edu.zut.wi.vsl.app.gui.DeskItem:210 - Connecting...
+2026-10-23 12:04:24,794 DEBUG pl.edu.zut.wi.vsl.app.gui.DeskItem:517 - LSB.D has input
+2026-10-23 12:04:25,455 DEBUG pl.edu.zut.wi.vsl.app.gui.DeskItem:354 - current mode: None
+2026-10-23 12:04:59,112 INFO  pl.edu.zut.wi.vsl.app.gui.panels.OutputPanel:117 - Selected output directory: C:\Users\ADMiN\US\SSII\CAIs\CAI_2.2\trabajo\outputs
+2026-10-23 12:05:09,675 DEBUG pl.edu.zut.wi.vsl.app.gui.DeskItem:345 - global mode: Executing
+2026-10-23 12:05:09,675 DEBUG pl.edu.zut.wi.vsl.app.MainWindow:184 - Starting experiment. Inputs: 1 Executions to perform: 2
+2026-10-23 12:05:09,675 INFO  pl.edu.zut.wi.vsl.app.Flow:113 - Input 0 starting its 1 iterations.
+2026-10-23 12:05:09,691 DEBUG pl.edu.zut.wi.vsl.app.Flow:137 - Creating new image: type: 5, isAlphaPremultiplied: false, path: C:\Users\ADMiN\US\SSII\CAIs\CAI_2.2\Dibujo.bmp
+2026-10-23 12:05:09,691 INFO  pl.edu.zut.wi.vsl.app.Flow:161 - Starting 0 iteration, Input -> LSB.D
+2026-10-23 12:05:09,691 INFO  pl.edu.zut.wi.vsl.modules.steganography.lsb.LsbImpl:348 - Decoding, size of message [B]:37099
+2026-10-23 12:05:09,706 INFO  pl.edu.zut.wi.vsl.app.Flow:161 - Starting 1 iteration, LSB.D -> Output
+2026-10-23 12:05:09,719 DEBUG pl.edu.zut.wi.vsl.app.Flow:240 - Input number 0 stopped.
+2026-10-23 12:05:09,719 INFO  pl.edu.zut.wi.vsl.app.FlowMonitor:90 - Stopping all threads, ending experiment
+2026-10-23 12:05:09,719 DEBUG pl.edu.zut.wi.vsl.app.gui.DeskItem:345 - global mode: None
+2026-10-23 12:05:09,724 DEBUG pl.edu.zut.wi.vsl.app.MainWindow:138 - Experiment stopped.
+2026-10-23 12:05:12,785 DEBUG pl.edu.zut.wi.vsl.app.gui.DeskItem:345 - global mode: Executing
+2026-10-23 12:05:12,785 DEBUG pl.edu.zut.wi.vsl.app.MainWindow:184 - Starting experiment. Inputs: 1 Executions to perform: 2
+2026-10-23 12:05:12,785 INFO  pl.edu.zut.wi.vsl.app.Flow:113 - Input 0 starting its 1 iterations.
+2026-10-23 12:05:12,797 DEBUG pl.edu.zut.wi.vsl.app.Flow:137 - Creating new image: type: 5, isAlphaPremultiplied: false, path: C:\Users\ADMiN\US\SSII\CAIs\CAI_2.2\Dibujo.bmp
+2026-10-23 12:05:12,797 INFO  pl.edu.zut.wi.vsl.app.Flow:161 - Starting 0 iteration, Input -> LSB.D
+2026-10-23 12:05:12,797 INFO  pl.edu.zut.wi.vsl.modules.steganography.lsb.LsbImpl:348 - Decoding, size of message [B]:37099
+2026-10-23 12:05:12,797 INFO  pl.edu.zut.wi.vsl.app.Flow:161 - Starting 1 iteration, LSB.D -> Output
+2026-10-23 12:05:12,811 DEBUG pl.edu.zut.wi.vsl.app.Flow:240 - Input number 0 stopped.
+2026-10-23 12:05:12,811 INFO  pl.edu.zut.wi.vsl.app.FlowMonitor:90 - Stopping all threads, ending experiment
+2026-10-23 12:05:12,811 DEBUG pl.edu.zut.wi.vsl.app.gui.DeskItem:345 - global mode: None
+2026-10-23 12:05:12,815 DEBUG pl.edu.zut.wi.vsl.app.MainWindow:138 - Experiment stopped.
+2026-10-23 12:06:04,438 INFO  pl.edu.zut.wi.vsl.app.gui.panels.OutputPanel:117 - Selected output directory: C:\Users\ADMiN\US\SSII\CAIs\CAI_2.2\trabajo\analisis
+2026-10-23 12:06:11,686 DEBUG pl.edu.zut.wi.vsl.app.gui.DeskItem:345 - global mode: Executing
+2026-10-23 12:06:11,686 DEBUG pl.edu.zut.wi.vsl.app.MainWindow:184 - Starting experiment. Inputs: 1 Executions to perform: 2
+2026-10-23 12:06:11,686 INFO  pl.edu.zut.wi.vsl.app.Flow:113 - Input 0 starting its 1 iterations.
+2026-10-23 12:06:11,702 DEBUG pl.edu.zut.wi.vsl.app.Flow:137 - Creating new image: type: 5, isAlphaPremultiplied: false, path: C:\Users\ADMiN\US\SSII\CAIs\CAI_2.2\Dibujo.bmp
+2026-10-23 12:06:11,702 INFO  pl.edu.zut.wi.vsl.app.Flow:161 - Starting 0 iteration, Input -> LSB.D
+2026-10-23 12:06:11,702 INFO  pl.edu.zut.wi.vsl.modules.steganography.lsb.LsbImpl:348 - Decoding, size of message [B]:37099
+2026-10-23 12:06:11,716 INFO  pl.edu.zut.wi.vsl.app.Flow:161 - Starting 1 iteration, LSB.D -> Output
+2026-10-23 12:06:11,724 DEBUG pl.edu.zut.wi.vsl.app.Flow:240 - Input number 0 stopped.
+2026-10-23 12:06:11,726 INFO  pl.edu.zut.wi.vsl.app.FlowMonitor:90 - Stopping all threads, ending experiment
+2026-10-23 12:06:11,726 DEBUG pl.edu.zut.wi.vsl.app.gui.DeskItem:345 - global mode: None
+2026-10-23 12:06:11,729 DEBUG pl.edu.zut.wi.vsl.app.MainWindow:138 - Experiment stopped.
+2026-10-23 12:13:31,609 INFO  pl.edu.zut.wi.vsl.app.gui.DropHandler:822 - Dropped Input
+2026-10-23 12:14:00,456 INFO  pl.edu.zut.wi.vsl.app.gui.panels.InputPanel:144 - Added 1 files to list
+2026-10-23 12:14:05,068 INFO  pl.edu.zut.wi.vsl.app.gui.DropHandler:822 - Dropped LSB.E
+2026-10-23 12:14:08,076 INFO  pl.edu.zut.wi.vsl.app.gui.DeskItem:210 - Connecting...
+2026-10-23 12:14:08,460 DEBUG pl.edu.zut.wi.vsl.app.gui.DeskItem:354 - current mode: None
+2026-10-23 12:15:05,726 INFO  pl.edu.zut.wi.vsl.app.gui.panels.MessagePanel:133 - Chosen file: C:\Users\ADMiN\US\SSII\CAIs\CAI_2.2\trabajo\mensaje.txt
+2026-10-23 12:15:34,947 INFO  pl.edu.zut.wi.vsl.app.gui.DropHandler:822 - Dropped Output
+2026-10-23 12:15:36,974 INFO  pl.edu.zut.wi.vsl.app.gui.DeskItem:210 - Connecting...
+2026-10-23 12:15:36,974 DEBUG pl.edu.zut.wi.vsl.app.gui.DeskItem:517 - LSB.E has input
+2026-10-23 12:15:37,806 DEBUG pl.edu.zut.wi.vsl.app.gui.DeskItem:354 - current mode: None
+2026-10-23 12:16:10,497 INFO  pl.edu.zut.wi.vsl.app.gui.panels.OutputPanel:117 - Selected output directory: C:\Users\ADMiN\US\SSII\CAIs\CAI_2.2\trabajo
+2026-10-23 12:17:44,773 INFO  pl.edu.zut.wi.vsl.app.gui.panels.OutputPanel:117 - Selected output directory: C:\Users\ADMiN\US\SSII\CAIs\CAI_2.2\trabajo
+2026-10-23 12:17:55,877 INFO  pl.edu.zut.wi.vsl.app.gui.DropHandler:822 - Dropped Report
+2026-10-23 12:17:58,416 INFO  pl.edu.zut.wi.vsl.app.gui.DeskItem:210 - Connecting...
+2026-10-23 12:17:58,416 DEBUG pl.edu.zut.wi.vsl.app.gui.DeskItem:517 - LSB.E has input
+2026-10-23 12:17:58,416 DEBUG pl.edu.zut.wi.vsl.app.gui.DeskItem:523 - LSB.E has output
+2026-10-23 12:18:01,793 DEBUG pl.edu.zut.wi.vsl.app.gui.DeskItem:345 - global mode: None
+2026-10-23 12:18:01,793 DEBUG pl.edu.zut.wi.vsl.app.gui.DeskItem:354 - current mode: None
+2026-10-23 12:18:06,693 INFO  pl.edu.zut.wi.vsl.app.gui.DeskItem:218 - Report - removing
+2026-10-23 12:18:18,947 DEBUG pl.edu.zut.wi.vsl.app.gui.DeskItem:345 - global mode: Executing
+2026-10-23 12:18:18,947 DEBUG pl.edu.zut.wi.vsl.app.MainWindow:184 - Starting experiment. Inputs: 1 Executions to perform: 2
+2026-10-23 12:18:18,947 INFO  pl.edu.zut.wi.vsl.app.Flow:113 - Input 0 starting its 1 iterations.
+2026-10-23 12:18:18,975 DEBUG pl.edu.zut.wi.vsl.app.Flow:137 - Creating new image: type: 5, isAlphaPremultiplied: false, path: C:\Users\ADMiN\US\SSII\CAIs\CAI_2.2\trabajo\carrier_limpio.bmp
+2026-10-23 12:18:18,975 INFO  pl.edu.zut.wi.vsl.app.Flow:161 - Starting 0 iteration, Input -> LSB.E
+2026-10-23 12:18:18,975 INFO  pl.edu.zut.wi.vsl.modules.steganography.lsb.LsbImpl:277 - Finished LSB encoding. Number of encoded bytes: 92
+2026-10-23 12:18:18,991 INFO  pl.edu.zut.wi.vsl.app.Flow:161 - Starting 1 iteration, LSB.E -> Output
+2026-10-23 12:18:19,008 DEBUG pl.edu.zut.wi.vsl.app.Flow:240 - Input number 0 stopped.
+2026-10-23 12:18:19,013 INFO  pl.edu.zut.wi.vsl.app.FlowMonitor:90 - Stopping all threads, ending experiment
+2026-10-23 12:18:19,013 DEBUG pl.edu.zut.wi.vsl.app.gui.DeskItem:345 - global mode: None
+2026-10-23 12:18:19,016 DEBUG pl.edu.zut.wi.vsl.app.MainWindow:138 - Experiment stopped.
+2026-10-23 12:18:36,609 INFO  pl.edu.zut.wi.vsl.app.gui.DeskItem:218 - Output - removing
+2026-10-23 12:18:39,901 INFO  pl.edu.zut.wi.vsl.app.gui.DropHandler:822 - Dropped Report
+2026-10-23 12:18:41,386 INFO  pl.edu.zut.wi.vsl.app.gui.DeskItem:210 - Connecting...
+2026-10-23 12:18:41,386 DEBUG pl.edu.zut.wi.vsl.app.gui.DeskItem:517 - LSB.E has input
+2026-10-23 12:18:41,739 DEBUG pl.edu.zut.wi.vsl.app.gui.DeskItem:354 - current mode: None
+2026-10-23 12:19:17,029 INFO  pl.edu.zut.wi.vsl.app.gui.panels.ReportPanel:149 - Selected output directory: C:\Users\ADMiN\US\SSII\CAIs\CAI_2.2\trabajo\reportes
+2026-10-23 12:19:29,241 DEBUG pl.edu.zut.wi.vsl.app.gui.DeskItem:345 - global mode: Executing
+2026-10-23 12:19:29,241 DEBUG pl.edu.zut.wi.vsl.app.MainWindow:184 - Starting experiment. Inputs: 1 Executions to perform: 2
+2026-10-23 12:19:29,241 INFO  pl.edu.zut.wi.vsl.app.Flow:113 - Input 0 starting its 1 iterations.
+2026-10-23 12:19:29,256 DEBUG pl.edu.zut.wi.vsl.app.Flow:137 - Creating new image: type: 5, isAlphaPremultiplied: false, path: C:\Users\ADMiN\US\SSII\CAIs\CAI_2.2\trabajo\carrier_limpio.bmp
+2026-10-23 12:19:29,256 INFO  pl.edu.zut.wi.vsl.app.Flow:161 - Starting 0 iteration, Input -> LSB.E
+2026-10-23 12:19:29,272 INFO  pl.edu.zut.wi.vsl.modules.steganography.lsb.LsbImpl:277 - Finished LSB encoding. Number of encoded bytes: 92
+2026-10-23 12:19:29,295 INFO  pl.edu.zut.wi.vsl.app.Flow:161 - Starting 1 iteration, LSB.E -> Report
+2026-10-23 12:19:29,311 DEBUG pl.edu.zut.wi.vsl.app.Flow:240 - Input number 0 stopped.
+2026-10-23 12:19:29,311 INFO  pl.edu.zut.wi.vsl.app.FlowMonitor:90 - Stopping all threads, ending experiment
+2026-10-23 12:19:29,311 DEBUG pl.edu.zut.wi.vsl.app.gui.DeskItem:345 - global mode: None
+2026-10-23 12:19:29,311 DEBUG pl.edu.zut.wi.vsl.app.MainWindow:138 - Experiment stopped.

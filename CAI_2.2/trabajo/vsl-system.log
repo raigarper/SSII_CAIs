@@ -1,0 +1,21 @@
+2026-10-23 12:24:06,136 INFO  pl.edu.zut.wi.vsl.modules.steganography.lsb.LsbImpl:277 - Finished LSB encoding. Number of encoded bytes: 92
+2026-10-23 12:24:06,583 INFO  pl.edu.zut.wi.vsl.modules.steganography.lsb.LsbImpl:277 - Finished LSB encoding. Number of encoded bytes: 432
+2026-10-23 12:24:16,426 INFO  pl.edu.zut.wi.vsl.modules.steganography.lsb.LsbImpl:348 - Decoding, size of message [B]:92
+2026-10-23 12:24:16,886 INFO  pl.edu.zut.wi.vsl.modules.steganography.lsb.LsbImpl:348 - Decoding, size of message [B]:432
+2026-10-23 12:24:44,096 INFO  pl.edu.zut.wi.vsl.modules.steganography.lsb.LsbImpl:277 - Finished LSB encoding. Number of encoded bytes: 133
+2026-10-23 12:24:44,548 INFO  pl.edu.zut.wi.vsl.modules.steganography.lsb.LsbImpl:348 - Decoding, size of message [B]:133
+2026-10-23 12:26:16,572 INFO  pl.edu.zut.wi.vsl.modules.steganography.lsb.LsbImpl:277 - Finished LSB encoding. Number of encoded bytes: 448
+2026-10-23 12:26:17,104 INFO  pl.edu.zut.wi.vsl.modules.steganography.lsb.LsbImpl:348 - Decoding, size of message [B]:448
+2026-10-23 12:26:45,417 INFO  pl.edu.zut.wi.vsl.modules.steganography.lsb.LsbImpl:348 - Decoding, size of message [B]:432
+2026-10-23 12:26:45,993 INFO  pl.edu.zut.wi.vsl.modules.steganography.lsb.LsbImpl:348 - Decoding, size of message [B]:432
+2026-10-23 12:26:46,518 INFO  pl.edu.zut.wi.vsl.modules.steganography.lsb.LsbImpl:348 - Decoding, size of message [B]:29104
+2026-10-23 12:26:47,083 INFO  pl.edu.zut.wi.vsl.modules.steganography.lsb.LsbImpl:348 - Decoding, size of message [B]:29104
+2026-10-23 12:26:47,594 INFO  pl.edu.zut.wi.vsl.modules.steganography.lsb.LsbImpl:348 - Decoding, size of message [B]:29104
+2026-10-23 12:27:16,055 INFO  pl.edu.zut.wi.vsl.modules.steganography.lsb.LsbImpl:348 - Decoding, size of message [B]:-2064889
+2026-10-23 12:27:16,531 INFO  pl.edu.zut.wi.vsl.modules.steganography.lsb.LsbImpl:348 - Decoding, size of message [B]:432
+2026-10-23 12:27:17,088 INFO  pl.edu.zut.wi.vsl.modules.steganography.lsb.LsbImpl:348 - Decoding, size of message [B]:432
+2026-10-23 12:27:17,605 ERROR pl.edu.zut.wi.vsl.modules.steganography.lsb.LsbImpl:151 - Could not decode message.
+pl.edu.zut.wi.vsl.commons.steganography.DecodingException: Recovered message size is wrong: 132353592. Parameters are wrong or image was distorted.
+	at pl.edu.zut.wi.vsl.modules.steganography.lsb.LsbImpl.decode(LsbImpl.java:343)
+	at pl.edu.zut.wi.vsl.modules.steganography.lsb.LsbImpl.main(LsbImpl.java:149)
+2026-10-23 12:27:40,069 INFO  pl.edu.zut.wi.vsl.modules.steganography.lsb.LsbImpl:348 - Decoding, size of message [B]:432
