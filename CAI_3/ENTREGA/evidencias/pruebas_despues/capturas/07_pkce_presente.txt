@@ -1,0 +1,4 @@
+RT-03 (verificacion post-fix): la URL de redireccion /oauth/authorize ahora SI incluye:
+code_challenge=<hash> y code_challenge_method=S256
+URL completa (longitud y estructura, valores sensibles verificados en vivo):
+http://localhost:8000/oauth/authorize?response_type=code&client_id=hospital-web&redirect_uri=http%3A%2F%2Flocalhost%3A8001%2Fcallback&scope=paciente%3Aleer+medico%3Aescribir&state=...&code_challenge=...&code_challenge_method=S256

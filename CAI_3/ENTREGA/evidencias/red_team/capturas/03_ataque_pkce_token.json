@@ -1,0 +1,1 @@
+{"access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAiLCJzdWIiOiJyb2NpbyIsImF1ZCI6Imhvc3BpdGFsLXdlYiIsInNjb3BlIjoicGFjaWVudGU6bGVlciIsImlhdCI6MTc5NDU2NjI0OSwiZXhwIjoxNzk0NTY5ODQ5fQ.fG1CHIeiqZyazZnJpX7k4JG3xuBjXKJPA2d5D4Mgsr0", "expires_in": 864000, "scope": "paciente:leer", "token_type": "Bearer"}

@@ -1,0 +1,5 @@
+1) Login OK, token obtenido.
+2) Uso ANTES de logout -> HTTP 200
+3) /oauth/revoke -> HTTP 200 {"status":"ok"}
+
+4) Uso DESPUES de logout (mismo token) -> HTTP 401 {"error": "invalid_token", "error_description": "The access token provided is expired, revoked, malformed, or invalid for other reasons."}

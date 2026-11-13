@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Configurar FreeOTP - {{ username }}</title>
+</head>
+<body>
+    <h2>1. Vincula tu dispositivo con FreeOTP</h2>
+
+    <p>
+        Seleccionar cuenta:
+        <a href="/setup-mfa?user=rocio"><button type="button">Rocio (Paciente)</button></a>
+        <a href="/setup-mfa?user=dr_gasca"><button type="button">Dr. Gasca (Médico)</button></a>
+    </p>
+
+    <p>Configurando autenticación para el usuario: <strong>{{ username }}</strong></p>
+
+    {% if error %}
+        <p style="color: red;"><strong>Error:</strong> {{ error }}</p>
+    {% endif %}
+
+    {% if pedir_password %}
+        <!--
+          FIX RT-02: antes este endpoint mostraba el QR y el secreto TOTP de
+          CUALQUIER usuario sin pedir ninguna credencial. Ahora se exige la
+          contraseña del propio usuario antes de generar el QR.
+        -->
+        <p>Introduce tu contraseña para generar el código QR de vinculación:</p>
+        <form method="post" action="/setup-mfa?user={{ username }}" autocomplete="off">
+            <label for="password">Contraseña:</label><br>
+            <input type="password" id="password" name="password" required autocomplete="new-password" autofocus><br><br>
+            <button type="submit">Mostrar código QR</button>
+        </form>
+    {% else %}
+        <p>Escanea este código QR con la aplicación <strong>FreeOTP</strong> en tu móvil:</p>
+        <img src="data:image/png;base64,{{ qr_b64 }}" alt="QR FreeOTP de {{ username }}">
+        <p><small>
+            <!-- FIX RT-02: ya no se imprime el secreto TOTP en texto plano. -->
+            El secreto solo viaja dentro del código QR, no se muestra en esta página.
+        </small></p>
+    {% endif %}
+</body>
+</html>

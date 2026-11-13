@@ -1,0 +1,75 @@
+CAI3-Parte1 - VERSION CORREGIDA (Blue Team) - Security Team 2 (ST-2)
+
+Simulamos la misma arquitectura que el prototipo original: el Servidor de
+Identidad en el puerto 8000 y el Portal Medico en el puerto 8001, con las
+vulnerabilidades de la Fase 1 corregidas (ver informe ST-2-CAI3-Parte1.pdf
+y evidencias/auditoria_codigo/hallazgos.md).
+
+Ficheros:
+
+SourceCode_hardened/
+├── requirements.txt
+├── auth_server.py
+├── auth_client.py
+├── static/
+│   └── portal.js
+└── templates/
+    ├── setup_mfa.html
+    ├── login.html
+    └── portal.html
+
+Paso 1: Crear el entorno virtual e instalar dependencias
+
+a) En Windows (PowerShell o CMD)
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+
+b) En Linux (Bash)
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+
+Paso 2 (opcional pero recomendado): variables de entorno
+
+Si no se definen, el codigo usa valores de desarrollo por defecto (validos
+solo para pruebas locales, NUNCA en produccion):
+
+  FLASK_SECRET_KEY            clave de sesion de Flask
+  HOSPITAL_CLIENT_SECRET      client_secret OAuth2 del Portal Medico
+  INTERNAL_API_KEY            clave interna servidor-a-servidor (revocacion)
+
+Ejemplo en Windows (PowerShell), antes de arrancar cada servidor:
+  $env:HOSPITAL_CLIENT_SECRET = "otro-valor-mas-seguro"
+  $env:INTERNAL_API_KEY = "otro-valor-mas-seguro"
+
+Importante: ambos servidores deben usar el MISMO valor de
+HOSPITAL_CLIENT_SECRET e INTERNAL_API_KEY (son secretos compartidos entre
+el Servidor de Identidad y el Portal Medico).
+
+Paso 3: Arrancar los dos servidores (Necesitas 2 terminales)
+
+a. Terminal 1 - Servidor de Identidad: python auth_server.py
+b. Terminal 2 - Portal Medico: python auth_client.py
+
+Paso 4: Acceder al laboratorio
+
+1. Abre tu navegador en http://localhost:8001
+2. Pulsa "Configurar FreeOTP". A diferencia del prototipo original, ahora
+   se te pedira tu contraseña antes de mostrar el codigo QR (Vulnerabilidad
+   RT-02 corregida). Las contraseñas de los usuarios de prueba estan en el
+   informe ST-2-CAI3-Parte1.pdf (apartado de Red Team), no en el codigo.
+3. Escanea el QR con FreeOTP, o usa los scripts de
+   evidencias/pruebas_despues/scripts_despues/ para generar codigos de
+   prueba sin movil.
+4. Vuelve a http://localhost:8001, pulsa "Iniciar sesion con OAuth 2.0 +
+   FreeOTP" e introduce el codigo de 6 digitos.
+
+(Importante: usa siempre localhost, no mezcles con 127.0.0.1, por la misma
+razon que en el proyecto original: las cookies de sesion OAuth 2.0 pueden
+fallar por diferencia de dominio.)
+
+Diferencias de seguridad respecto al proyecto original: ver
+evidencias/auditoria_codigo/hallazgos.md (causa de cada vulnerabilidad) y
+evidencias/pruebas_despues/resultado_verificacion.md (verificacion de que
+cada ataque queda bloqueado).

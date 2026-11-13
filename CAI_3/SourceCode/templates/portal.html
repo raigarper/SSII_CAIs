@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Portal Médico</title>
+</head>
+<body>
+    <h2>Portal Médico <span id="usuario"></span></h2>
+    <p>1. Vincular FreeOTP: <a id="link-mfa" href="http://localhost:8000/setup-mfa" target="_blank">Configurar FreeOTP</a></p>
+    <p>2. Autenticarse: <a href="/login"><strong>Iniciar sesión con OAuth 2.0 + FreeOTP</strong></a> | <a href="/logout">Cerrar sesión</a></p>
+    <hr>
+
+    <h3>Operaciones de API</h3>
+    <button onclick="probarAPI('/api/historial', 'GET')">Leer Historial (GET)</button>
+    <br><br>
+
+    <div>
+        <input type="text" id="nuevo-diagnostico" placeholder="Escribe nuevo diagnóstico..." size="35">
+        <button id="btn-modificar" onclick="modificarHistorial()">Modificar Historial (POST)</button>
+    </div>
+    <br>
+
+    <button onclick="verCookiesJS()">Inspeccionar Cookies desde JS</button>
+    <pre id="resultado" style="background:#f4f4f4; padding:12px; margin-top:12px; border:1px solid #ccc;">Esperando acción...</pre>
+
+    <script>
+        const host = window.location.hostname;
+        document.getElementById('link-mfa').href = `http://${host}:8000/setup-mfa`;
+
+        const match = document.cookie.match(/(?:^|;\s*)access_token=([^;]*)/);
+        if (match) {
+            try {
+                const payload = JSON.parse(atob(match[1].split('.')[1].replace(/-/g, '+').replace(/_/g, '/')));
+                if (payload.sub) document.getElementById('usuario').textContent = `(${payload.sub})`;
+            } catch (e) {}
+        }
+
+        async function probarAPI(url, metodo) {
+            const res = await fetch(url, { method: metodo });
+            const texto = await res.text();
+            document.getElementById('resultado').textContent = `HTTP ${res.status} ${res.statusText}\n${texto}`;
+        }
+
+        async function modificarHistorial() {
+            const diagnostico = document.getElementById('nuevo-diagnostico').value;
+            const res = await fetch('/api/historial', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ diagnostico: diagnostico })
+            });
+            const texto = await res.text();
+            document.getElementById('resultado').textContent = `HTTP ${res.status} ${res.statusText}\n${texto}`;
+        }
+
+        function verCookiesJS() {
+            document.getElementById('resultado').textContent = `document.cookie accesible por JS:\n${document.cookie || '(Vacío)'}`;
+        }
+    </script>
+</body>
+</html>

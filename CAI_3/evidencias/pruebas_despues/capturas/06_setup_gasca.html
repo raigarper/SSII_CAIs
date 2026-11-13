@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Configurar FreeOTP - dr_gasca</title>
+</head>
+<body>
+    <h2>1. Vincula tu dispositivo con FreeOTP</h2>
+
+    <p>
+        Seleccionar cuenta:
+        <a href="/setup-mfa?user=rocio"><button type="button">Rocio (Paciente)</button></a>
+        <a href="/setup-mfa?user=dr_gasca"><button type="button">Dr. Gasca (Médico)</button></a>
+    </p>
+
+    <p>Configurando autenticación para el usuario: <strong>dr_gasca</strong></p>
+
+    
+
+    
+        <p>Escanea este código QR con la aplicación <strong>FreeOTP</strong> en tu móvil:</p>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAhIAAAISAQAAAACxRhsSAAAEuklEQVR4nO2dTW7kOAyFn8YGspRvkKPYNwtypLmBfZQ6wADyMoAMzoKkJCeZ7kUnarfnaWGUVaoPFkBQ/HUFwa+O7a9fRgBkkEEGGWSQQQYZZJBRGcHGCL8dgW06ArbpCGHZRwD7CGwTEJbd1y9f/BxkkPFDxiwiIgkqnfppTgDmxwggZr/gCLJiEBEROTO+4jnIIOOHjN20Y3h5PAkQsynVIp2qRV+Sra/K93p7IeN/wNgm2JE/iwmrvE6AvD6L2Lnf4znIIKMZ44eZmBAQBwnb9I/OhDkdAPYAzH9//MFl9kLGfRlQQ9Ps00EwSwbmNIis0b4Aol1sJLdPZxGR9Sp7IeP2jC2EEMIEAPuT+kfh5eFe/vywS1j2EWHBoe7+1z8HGWR8OvQYPyVPjyBABhDfQvWjsE1wwYznZOtV9kLGfRl+7icAgJ32ssYMPfd16Jyvq4uF5z4ZXRjFPs1Q6RTJMFs0AbICAGKGxlSLxOoXtE/J6MOA6cSYVU+KSFbpVDmVNIitS4CG+DXOn8pvr7IXMu7LgPvw2UU0mj41Zdmsy7BoQElFUZ+S0Ydh575GntQ+LcKKar1awKpRvoiZckpGL4aLHoAmQrqeYqUuk65oq/XKc5+MPozm3Fe1CcDj/Pp5MH0KN2FtVKG+yl7IuC/Dz30M4s58Nu9p9ou5UGoLDCVHlalPyejFeK9PPUxV4lKxSrEJsEYDSlaVckrG9zNOcf7YGqQmolVtokpxCbFSTsnowjj5UR4XbcJPmoAq6rX4Vs2gnJLRjzGIrPEtYHsWwaZF0EdQc/XVe0zCoouPEBYcrEMhoxcDVS/q/ez5qDacr87U0JafzNSnZPRjNPl9F8zqKb2bq5FU963oR5HRh/FJ/HTQ2zY4VVJR5nQN4sUAlFMy+jHCslv3no4tPImVTccMbNMgViK9j6e5L34OMsj4j2GmaWxLS5o26TJnNms1Uhk/JaMfw+v59zELcIyCfYJgn5o1sk0JATEBwFvAvALAPrr2vcpeyLgv40O9VK0/XYunVEtPLboqp/Kpq+yFjPsySqmeXWqSX4f69p6Ueh8SoJyS0Ydx6jupLU/xlO7XNCosVtU0TtE+JaMPo6mX8qATSt+Jt5yUGqq2+gSgnJLRi9H2nayo0f16K0VYT/UqrJcioyOjLYYy0St50wTv7UuDpwIko1akUE7J6MQ4v7fHvfzi+Xv5Xj5LrEi1XimnZHw/49QXLadM/1l3NjrWBvP7ZHRjfMjbW0NU6eRvektLg2mkPiWjL+OkLF0Im3Dq7I39LqclYJUYPyWjG+NU15e8fK/c2qIoUg1Xn2P/PhndGM25rxKr45yPasJUpd+0NqRQTsnoxKj/d2Ln+WN001T/5cS6psMC2FxJnl5tL2TckfHJ+6SlcaZqmV9Tyj8L86Zk9GW0fdFNnX4C0NqiFl09GQS0T8n4nYxBsD1niKQjuAsFhKW8TXKN9s8n3/scZJBRxid/X3IEzOkAtmVQ5Rnmx5ixPb8FVIOg0bZX2QsZ92W8t0+bcmhgaOKn3m9a3ocCxvnJ6MYodX0AmlRUAprqaB3R01PmYLGen4xujCA/X/OTsV1lL2SQQQYZZJBBBhlk/PmMfwGMc2ycSAqG7AAAAABJRU5ErkJggg==" alt="QR FreeOTP de dr_gasca">
+        <p><small>
+            <!-- FIX RT-02: ya no se imprime el secreto TOTP en texto plano. -->
+            El secreto solo viaja dentro del código QR, no se muestra en esta página.
+        </small></p>
+    
+</body>
+</html>

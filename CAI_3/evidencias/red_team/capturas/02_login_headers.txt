@@ -1,0 +1,8 @@
+HTTP/1.1 302 FOUND
+Server: Werkzeug/3.1.9 Python/3.10.11
+Date: Fri, 13 Nov 2026 10:37:09 GMT
+Location: http://localhost:8001/callback?code=OXlwIG4xeEiXR7XAGu8i6pRHTHGZ18GLmGxOwdm2uKLjfPRW&state=zHwwPHxLz0PPFzsZFly43xNqYnDNwe
+Content-Type: text/html; charset=utf-8
+Content-Length: 0
+Connection: close
+

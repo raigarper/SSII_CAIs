@@ -1,0 +1,5 @@
+=== Reutilizacion de codigo TOTP (RT-07) ===
+Codigo usado: 523983
+1er login -> code=uy3LsQReRdyVNC8gSsGl5dTfQpaJ0rRP8bEeVTuCokvGJl2E
+2o login (mismo TOTP, inmediato) -> code=cXd81EpVsqalyC6IWwPsZIrv2IZk5ZouF0bEekFvirxzCVEx
+CONCLUSION: el servidor acepta el mismo codigo TOTP mas de una vez (sin control anti-replay).

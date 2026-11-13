@@ -1,0 +1,8 @@
+=== Evidencia de arranque de servidores - Fase 0 ===
+Fecha: Fri, Nov 13, 2026 11:33:05 AM
+
+Comprobacion 8000 (Servidor de Identidad):
+HTTP 200
+
+Comprobacion 8001 (Portal Medico):
+HTTP 200

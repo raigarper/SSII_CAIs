@@ -1,0 +1,25 @@
+ * Serving Flask app 'auth_client'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8001
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 487-139-854
+127.0.0.1 - - [13/Nov/2026 11:32:53] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 11:33:06] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 11:33:11] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 11:33:11] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [13/Nov/2026 11:36:39] "GET /login HTTP/1.1" 302 -
+127.0.0.1 - - [13/Nov/2026 11:38:19] "GET /api/historial HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 11:38:22] "POST /api/historial HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 11:38:35] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 11:38:36] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [13/Nov/2026 11:38:51] "GET /login HTTP/1.1" 302 -
+127.0.0.1 - - [13/Nov/2026 11:39:15] "GET /callback?code=lQZBBqkBXo9ISxAp29nl36jKiwGttaK4EtaLVmrxoGSo1Srm&state=oirnV5DRSEHb1iamKIToEENUsaDF7P HTTP/1.1" 302 -
+127.0.0.1 - - [13/Nov/2026 11:39:15] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 11:40:16] "POST /api/historial HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 11:42:43] "GET /logout HTTP/1.1" 302 -
+127.0.0.1 - - [13/Nov/2026 11:42:46] "GET /api/historial HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 11:43:03] "GET /api/historial HTTP/1.1" 401 -
+127.0.0.1 - - [13/Nov/2026 11:52:00] "GET / HTTP/1.1" 200 -

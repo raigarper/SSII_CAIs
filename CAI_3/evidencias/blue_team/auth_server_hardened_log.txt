@@ -1,0 +1,62 @@
+C:\Users\ADMiN\US\SSII\CAIs\CAI_3\SourceCode_hardened\venv\lib\site-packages\authlib\jose\jwk.py:14: AuthlibDeprecationWarning: Please use ``JsonWebKey`` directly.
+  deprecate('Please use ``JsonWebKey`` directly.')
+ * Serving Flask app 'auth_server'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8000
+Press CTRL+C to quit
+127.0.0.1 - - [13/Nov/2026 11:52:46] "GET /.well-known/jwks.json HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 11:53:26] "GET /.well-known/jwt-key HTTP/1.1" 404 -
+127.0.0.1 - - [13/Nov/2026 11:53:27] "GET /.well-known/jwks.json HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 11:53:54] "GET /.well-known/jwks.json HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 11:54:03] "GET /setup-mfa?user=rocio HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 11:54:04] "POST /setup-mfa?user=rocio HTTP/1.1" 401 -
+127.0.0.1 - - [13/Nov/2026 11:54:13] "POST /setup-mfa?user=rocio HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 11:54:24] "POST /oauth/authorize?response_type=code&client_id=hospital-web&redirect_uri=http://localhost:8001/callback&scope=paciente:leer&state=x HTTP/1.1" 401 -
+127.0.0.1 - - [13/Nov/2026 11:54:25] "POST /oauth/authorize?response_type=code&client_id=hospital-web&redirect_uri=http://localhost:8001/callback&scope=paciente:leer&state=x HTTP/1.1" 401 -
+127.0.0.1 - - [13/Nov/2026 11:54:52] "POST /oauth/authorize?response_type=code&client_id=hospital-web&redirect_uri=http://localhost:8001/callback&scope=paciente:leer&state=x HTTP/1.1" 401 -
+127.0.0.1 - - [13/Nov/2026 11:54:53] "POST /oauth/authorize?response_type=code&client_id=hospital-web&redirect_uri=http://localhost:8001/callback&scope=paciente:leer&state=x HTTP/1.1" 401 -
+127.0.0.1 - - [13/Nov/2026 11:54:53] "POST /oauth/authorize?response_type=code&client_id=hospital-web&redirect_uri=http://localhost:8001/callback&scope=paciente:leer&state=x HTTP/1.1" 401 -
+127.0.0.1 - - [13/Nov/2026 11:54:53] "POST /oauth/authorize?response_type=code&client_id=hospital-web&redirect_uri=http://localhost:8001/callback&scope=paciente:leer&state=x HTTP/1.1" 401 -
+127.0.0.1 - - [13/Nov/2026 11:54:54] "POST /oauth/authorize?response_type=code&client_id=hospital-web&redirect_uri=http://localhost:8001/callback&scope=paciente:leer&state=x HTTP/1.1" 401 -
+127.0.0.1 - - [13/Nov/2026 11:54:54] "POST /oauth/authorize?response_type=code&client_id=hospital-web&redirect_uri=http://localhost:8001/callback&scope=paciente:leer&state=x HTTP/1.1" 429 -
+127.0.0.1 - - [13/Nov/2026 11:55:29] "POST /setup-mfa?user=dr_gasca HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 11:55:30] "POST /setup-mfa?user=dr_gasca HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 12:01:11] "GET /oauth/authorize?response_type=code&client_id=hospital-web&redirect_uri=http://localhost:8001/callback&scope=paciente:leer+medico:escribir&state=IeRSCz7LYadZzKv3WMucEAscMUCUqi&code_challenge=StLJs458AiGayfM9Yihk7o_ptA8ED1yMvemXZC54RGs&code_challenge_method=S256 HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 12:01:47] "GET /setup-mfa?user=rocio HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 12:02:03] "POST /setup-mfa?user=rocio HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 12:02:25] "POST /setup-mfa?user=rocio HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 12:02:36] "POST /setup-mfa?user=dr_gasca HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 12:03:24] "POST /oauth/authorize?response_type=code&client_id=hospital-web&redirect_uri=http://localhost:8001/callback&scope=paciente:leer+medico:escribir&state=IeRSCz7LYadZzKv3WMucEAscMUCUqi&code_challenge=StLJs458AiGayfM9Yihk7o_ptA8ED1yMvemXZC54RGs&code_challenge_method=S256 HTTP/1.1" 302 -
+127.0.0.1 - - [13/Nov/2026 12:03:26] "POST /oauth/token HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 12:03:28] "GET /.well-known/jwks.json HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 12:03:30] "GET /internal/jti-status?jti=1e7f71cfcc7f240aa1e7429a3b638b34 HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 12:06:52] "GET /.well-known/jwks.json HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 12:06:54] "GET /internal/jti-status?jti=1e7f71cfcc7f240aa1e7429a3b638b34 HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 12:07:09] "GET /internal/jti-status?jti=1e7f71cfcc7f240aa1e7429a3b638b34 HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 12:07:29] "GET /internal/jti-status?jti=1e7f71cfcc7f240aa1e7429a3b638b34 HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 12:08:09] "POST /oauth/authorize?response_type=code&client_id=hospital-web&redirect_uri=http://localhost:8001/callback&scope=paciente:leer+medico:escribir&state=replaytest&code_challenge=E9Melhoa2OwvFrEMTJguCHaoeK1t8URWbuGJSstw-cM&code_challenge_method=S256 HTTP/1.1" 302 -
+127.0.0.1 - - [13/Nov/2026 12:08:10] "POST /oauth/authorize?response_type=code&client_id=hospital-web&redirect_uri=http://localhost:8001/callback&scope=paciente:leer+medico:escribir&state=replaytest&code_challenge=E9Melhoa2OwvFrEMTJguCHaoeK1t8URWbuGJSstw-cM&code_challenge_method=S256 HTTP/1.1" 401 -
+127.0.0.1 - - [13/Nov/2026 12:08:29] "POST /oauth/authorize?response_type=code&client_id=hospital-web&redirect_uri=http://localhost:8001/callback&scope=paciente:leer+medico:escribir&state=script&code_challenge=6mg3PP8MPLvRCrw6B-68Z7xruCWtyX2tQgssAolgNdg&code_challenge_method=S256 HTTP/1.1" 401 -
+127.0.0.1 - - [13/Nov/2026 12:09:03] "POST /oauth/authorize?response_type=code&client_id=hospital-web&redirect_uri=http://localhost:8001/callback&scope=paciente:leer+medico:escribir&state=script&code_challenge=6o-T1CwpZyIgPAacfefj1mabmi1DCrlGzlWCKD4b1AI&code_challenge_method=S256 HTTP/1.1" 302 -
+127.0.0.1 - - [13/Nov/2026 12:09:06] "POST /oauth/token HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 12:09:19] "POST /oauth/authorize?response_type=code&client_id=hospital-web&redirect_uri=http://localhost:8001/callback&scope=paciente:leer+medico:escribir&state=script&code_challenge=TM-rd_x6pjBhdyGe1o1hdYDPmv8fxVTnc42o9p_GvNw&code_challenge_method=S256 HTTP/1.1" 401 -
+127.0.0.1 - - [13/Nov/2026 12:09:20] "POST /oauth/revoke HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 12:09:42] "POST /oauth/authorize?response_type=code&client_id=hospital-web&redirect_uri=http://localhost:8001/callback&scope=paciente:leer+medico:escribir&state=script&code_challenge=Pa000hPuU4GVapfSCVP_W_3MgEeS7_27-SWn7U3pQ5A&code_challenge_method=S256 HTTP/1.1" 302 -
+127.0.0.1 - - [13/Nov/2026 12:09:44] "POST /oauth/token HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 12:09:47] "GET /.well-known/jwks.json HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 12:10:01] "POST /oauth/authorize?response_type=code&client_id=hospital-web&redirect_uri=http://localhost:8001/callback&scope=paciente:leer+medico:escribir&state=script&code_challenge=rbNnYMBP5tVCCKEs1NUS-DTFZ6IVf1n4pRl_MGEVLdI&code_challenge_method=S256 HTTP/1.1" 401 -
+127.0.0.1 - - [13/Nov/2026 12:10:04] "GET /.well-known/jwks.json HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 12:10:17] "POST /oauth/authorize?response_type=code&client_id=hospital-web&redirect_uri=http://localhost:8001/callback&scope=paciente:leer+medico:escribir&state=script&code_challenge=ZBK18l-O6XQs_zoJvPI1sJiPESDy_KRyxoPXYkmbuyM&code_challenge_method=S256 HTTP/1.1" 302 -
+127.0.0.1 - - [13/Nov/2026 12:10:19] "POST /oauth/token HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 12:10:35] "POST /oauth/authorize?response_type=code&client_id=hospital-web&redirect_uri=http://localhost:8001/callback&scope=paciente:leer+medico:escribir&state=script&code_challenge=-Y40wp5rZ2vV7TEMCGAvWyWYubcHj-5ytPJR9Oj6IKw&code_challenge_method=S256 HTTP/1.1" 302 -
+127.0.0.1 - - [13/Nov/2026 12:10:37] "POST /oauth/token HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 12:10:40] "GET /.well-known/jwks.json HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 12:10:42] "GET /internal/jti-status?jti=43715054997614eee6475d7124fd7d60 HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 12:10:47] "GET /internal/jti-status?jti=43715054997614eee6475d7124fd7d60 HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 12:11:07] "POST /oauth/authorize?response_type=code&client_id=hospital-web&redirect_uri=http://localhost:8001/callback&scope=paciente:leer+medico:escribir&state=script&code_challenge=M9t4nJ_kBbZycM37bDgSqHvOt6oTBnoeewRZAD-GenI&code_challenge_method=S256 HTTP/1.1" 302 -
+127.0.0.1 - - [13/Nov/2026 12:11:10] "POST /oauth/token HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 12:11:14] "GET /internal/jti-status?jti=eff0fe8e50f711d5bc977f746f98f41a HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 12:11:16] "POST /oauth/revoke HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 12:11:21] "GET /internal/jti-status?jti=eff0fe8e50f711d5bc977f746f98f41a HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 12:11:33] "POST /oauth/revoke HTTP/1.1" 200 -

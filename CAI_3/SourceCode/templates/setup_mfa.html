@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Configurar FreeOTP - {{ username }}</title>
+</head>
+<body>
+    <h2>1. Vincula tu dispositivo con FreeOTP</h2>
+    
+    <p>
+        Seleccionar cuenta: 
+        <a href="/setup-mfa?user=rocio"><button type="button">Rocio (Paciente)</button></a>
+        <a href="/setup-mfa?user=dr_gasca"><button type="button">Dr. Gasca (Médico)</button></a>
+    </p>
+
+    <p>Configurando autenticación para el usuario: <strong>{{ username }}</strong></p>
+    <p>Escanea este código QR con la aplicación <strong>FreeOTP</strong> en tu móvil:</p>
+    
+    <img src="data:image/png;base64,{{ qr_b64 }}" alt="QR FreeOTP de {{ username }}">
+    <p><small>Valor almacenado en BD:<br><code>{{ db_seed }}</code></small></p>
+    
+    <script>
+        document.getElementById('link-portal').href = `http://${window.location.hostname}:8001`;
+    </script>
+</body>
+</html>
+
+

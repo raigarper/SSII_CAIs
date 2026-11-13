@@ -1,0 +1,4 @@
+=== Enumeracion de usuarios (RT-06) ===
+Usuario inexistente -> Error: El usuario especificado no existe en la base de datos
+Usuario existente + password mala -> Error: Contraseña incorrecta para este usuario
+CONCLUSION: un atacante puede distinguir usuarios validos de invalidos.

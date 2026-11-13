@@ -1,0 +1,30 @@
+ * Serving Flask app 'auth_server'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 487-139-854
+127.0.0.1 - - [13/Nov/2026 11:32:53] "GET /.well-known/jwt-key HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 11:33:05] "GET /.well-known/jwt-key HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 11:35:17] "GET /setup-mfa?user=rocio HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 11:35:24] "GET /setup-mfa?user=dr_gasca HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 11:36:22] "GET /oauth/authorize?response_type=code&client_id=hospital-web&redirect_uri=http://localhost:8001/callback&scope=paciente:leer%20medico:escribir HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 11:37:09] "POST /oauth/authorize?response_type=code&client_id=hospital-web&redirect_uri=http://localhost:8001/callback&scope=paciente:leer+medico:escribir&state=zHwwPHxLz0PPFzsZFly43xNqYnDNwe HTTP/1.1" 302 -
+127.0.0.1 - - [13/Nov/2026 11:37:29] "POST /oauth/token HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 11:38:19] "GET /.well-known/jwt-key HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 11:38:22] "GET /.well-known/jwt-key HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 11:38:51] "GET /oauth/authorize?response_type=code&client_id=hospital-web&redirect_uri=http://localhost:8001/callback&scope=paciente:leer+medico:escribir&state=oirnV5DRSEHb1iamKIToEENUsaDF7P HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 11:39:13] "POST /oauth/authorize?response_type=code&client_id=hospital-web&redirect_uri=http://localhost:8001/callback&scope=paciente:leer+medico:escribir&state=oirnV5DRSEHb1iamKIToEENUsaDF7P HTTP/1.1" 302 -
+127.0.0.1 - - [13/Nov/2026 11:39:15] "POST /oauth/token HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 11:39:54] "GET /.well-known/jwt-key HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 11:40:14] "GET /.well-known/jwt-key HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 11:40:16] "GET /.well-known/jwt-key HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 11:40:36] "POST /oauth/authorize?response_type=code&client_id=hospital-web&redirect_uri=http://localhost:8001/callback&scope=paciente:leer&state=x HTTP/1.1" 401 -
+127.0.0.1 - - [13/Nov/2026 11:40:36] "POST /oauth/authorize?response_type=code&client_id=hospital-web&redirect_uri=http://localhost:8001/callback&scope=paciente:leer&state=x HTTP/1.1" 401 -
+127.0.0.1 - - [13/Nov/2026 11:40:56] "POST /oauth/authorize?response_type=code&client_id=hospital-web&redirect_uri=http://localhost:8001/callback&scope=paciente:leer+medico:escribir&state=replay1 HTTP/1.1" 302 -
+127.0.0.1 - - [13/Nov/2026 11:40:56] "POST /oauth/authorize?response_type=code&client_id=hospital-web&redirect_uri=http://localhost:8001/callback&scope=paciente:leer+medico:escribir&state=replay1 HTTP/1.1" 302 -
+127.0.0.1 - - [13/Nov/2026 11:42:46] "GET /.well-known/jwt-key HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 11:43:03] "GET /.well-known/jwt-key HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 11:52:00] "GET / HTTP/1.1" 404 -

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Autenticación</title>
+</head>
+<body>
+    <h2>Inicio de Sesión</h2>
+    
+
+    <p style="font-size: 0.9em; color: #555;">
+        Autocompletar perfil de prueba: 
+        <button type="button" onclick="rellenar('rocio', 'SuperSegura2026!')">Rocio (Paciente)</button>
+        <button type="button" onclick="rellenar('dr_gasca', 'MedicoSegura2026!')">Dr. Gasca (Médico)</button>
+    </p>
+
+    <form method="post">
+        <label>Usuario:</label><br>
+        <input type="text" id="username" name="username" value="rocio" required><br><br>
+        
+        <label>Contraseña:</label><br>
+        <input type="password" id="password" name="password" value="SuperSegura2026!" required><br><br>
+        
+        <label>Código FreeOTP (6 dígitos):</label><br>
+        <input type="text" id="totp" name="totp" pattern="[0-9]{6}" maxlength="6" required autofocus><br><br>
+        
+        <button type="submit">Entrar</button>
+    </form>
+
+    <script>
+        function rellenar(user, pass) {
+            document.getElementById('username').value = user;
+            document.getElementById('password').value = pass;
+            document.getElementById('totp').value = '';
+            document.getElementById('totp').focus();
+        }
+    </script>
+</body>
+</html>

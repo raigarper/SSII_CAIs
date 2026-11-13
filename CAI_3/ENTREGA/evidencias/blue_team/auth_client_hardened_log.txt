@@ -1,0 +1,18 @@
+ * Serving Flask app 'auth_client'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8001
+Press CTRL+C to quit
+127.0.0.1 - - [13/Nov/2026 12:06:44] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 12:06:54] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 12:06:54] "GET /static/portal.js HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 12:07:09] "GET /api/historial HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 12:07:29] "POST /api/historial HTTP/1.1" 403 -
+127.0.0.1 - - [13/Nov/2026 12:09:20] "GET /api/historial HTTP/1.1" 401 -
+127.0.0.1 - - [13/Nov/2026 12:09:20] "GET /api/historial HTTP/1.1" 401 -
+127.0.0.1 - - [13/Nov/2026 12:10:47] "GET /api/historial HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 12:11:14] "GET /api/historial HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 12:11:21] "GET /api/historial HTTP/1.1" 401 -
+127.0.0.1 - - [13/Nov/2026 12:11:33] "POST /logout HTTP/1.1" 302 -
+127.0.0.1 - - [13/Nov/2026 12:11:33] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [13/Nov/2026 12:11:33] "GET /static/portal.js HTTP/1.1" 200 -

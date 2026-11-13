@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Autenticación</title>
+</head>
+<body>
+    <h2>Inicio de Sesión</h2>
+    {% if error %}
+        <p style="color: red;"><strong>Error:</strong> {{ error }}</p>
+    {% endif %}
+
+    <!--
+      FIX CODE-06: se ha eliminado el relleno automatico de usuario y
+      contraseña en claro (antes visible en el HTML de este formulario).
+      Las credenciales de los dos usuarios de prueba se facilitan solo en
+      el informe de este CAI, no en el codigo que se sirve al navegador.
+    -->
+    <form method="post" autocomplete="off">
+        <label for="username">Usuario:</label><br>
+        <input type="text" id="username" name="username" required autofocus><br><br>
+
+        <label for="password">Contraseña:</label><br>
+        <input type="password" id="password" name="password" required autocomplete="new-password"><br><br>
+
+        <label for="totp">Código FreeOTP (6 dígitos):</label><br>
+        <input type="text" id="totp" name="totp" pattern="[0-9]{6}" maxlength="6" required autocomplete="one-time-code"><br><br>
+
+        <button type="submit">Entrar</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Configurar FreeOTP - rocio</title>
+</head>
+<body>
+    <h2>1. Vincula tu dispositivo con FreeOTP</h2>
+    
+    <p>
+        Seleccionar cuenta: 
+        <a href="/setup-mfa?user=rocio"><button type="button">Rocio (Paciente)</button></a>
+        <a href="/setup-mfa?user=dr_gasca"><button type="button">Dr. Gasca (Médico)</button></a>
+    </p>
+
+    <p>Configurando autenticación para el usuario: <strong>rocio</strong></p>
+    <p>Escanea este código QR con la aplicación <strong>FreeOTP</strong> en tu móvil:</p>
+    
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeoAAAHqAQAAAADjFjCXAAAERElEQVR4nO2dTYrjMBCFX40NWcrQB8hR5Bv0kfpMcwPrKDlAg7UMyNQsVJLthGbANqSDXy1C3NGHbChK9edqUeyQ8GcPDRAnTpw4ceLEiRM/FheTFgAmkT62QOgmKR+ASAcAsSztj9ud+Elxr6qqIwCgUcAlSF/WSB9FdIht/lVVVdf4zt2JnxSPZr5ERASIIkC8qPTxojo4U7OypD14d+LnwtvHP/gBQLiaMdPwOUL8rU35EvHQ3YmfE3/SutB9t/AjIP5vB0UUKJAgcN8C//fQ3YmfEy9a5xRABOAHqCB2QOiaJECTAEyths9GgQgs88pv/ezEX4wHESlRqgUN8COQrV4fLypftxbSYxJz/Q7cnfjJ8GzrFuYrXO+ioWvKZdfkExZwCbq2dK++eeJviiPnQfwIIKdFRlgiZXAJ8GOjQI5hm0VyJcvw1s9O/FU4TH2yIqV8pOoAwDTRJcwJuqyJ+fyl1hHfh8vXOEl26UIHIKeKs3FrFIgi+ZsfG9UBE/064vvx0DUqvUuwE3acBHB3yWFGD0B6dzfFRDZ4x+1O/GT4z35diWGbEj+4BMCp6oB6ML/1sxN/FW7qk6MEp+bcwSWYrzeaJqpqsYT064jvw2s0ASw9N6dawldTQnhNZgQZwxLfh9cTdta1qonO0ifZzA3z4vJBrSO+TRYapjlAnWXp0tlZW49Zah3x/bgFrdJjduTuUnJ4jYpcLYaVnjEs8X1iHlpJEAOLGKIWY+dDGHUJbR3xzbLsDHaqOWgA6mmqdrha0qSEGdQ64jtk9utKMawpMURN1XnVYvqKJtKvI75DzNbVFHANaS1pVzN3Q16/bhB462cn/ivwRR12EuRk8O2idlnMochVixL+opsn/j74YwrOuppWnSYlpDDTN+eLaeuIb5OiXPUMdSUjvIgcapOdr/UyRhPEt0uxdbUE4arpG7GuSDwtodYR34c3+d3XfBFERAenKl+qKtIVNy/IRa0P6tDdiZ8KX/QSlzamppRgYc3Di7YAXTh3tHXEt8qcKsmqZwUK1E4n8/BK83rtb6fWEd8sj7WJOYYd6uWsiXOVgtEE8e0yZ05WbcRzC4Cue55KSpm2jvhmWUycEBsA0EGBuwAutQI3QuAA8bcWCJ/frY0HOGJ34ufEn9+bmFPAAJavws4nMcB8HfHduHV1aoKNDgMwv5lTxtlNUmoYdbrdb7h54m+H5xO2pN+apOGaIH6YWsDZh4a+TUD8UEH8yN+O2Z34OfF1NNHUYmxaLXIPv7I2QfwIPNZRw1FkzsiZwt1sYDFCmeTJnhPiO2QRTfhFMs5aAPKS2vNZwgy+D0t8jzzN6rQJiaPCK5CnJvpxavNgxSAA/NiJHrI78XPij7M6bSQnisIBk2jO4cUO8ONHkgX+1s9O/FX4qiJWJjnlC6+rYthTHwBPWOIbRfT/a34W/vc64sSJEydOnDjx34L/A4+RA+e8sVwVAAAAAElFTkSuQmCC" alt="QR FreeOTP de rocio">
+    <p><small>Valor almacenado en BD:<br><code>QXRSRXSHW4Z2ZPPTQCGFMSR5CIA5ETSS</code></small></p>
+    
+    <script>
+        document.getElementById('link-portal').href = `http://${window.location.hostname}:8001`;
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,9 @@
+=== RT-08: Token tras logout sigue siendo valido ===
+El logout solo borra la cookie del navegador (Set-Cookie: access_token=; Max-Age=0).
+El mismo JWT, usado directamente con 'Authorization: Bearer', sigue aceptandose (HTTP 200).
+CONCLUSION: no hay revocacion real de tokens. Un token robado sigue vivo hasta su expiracion (1h).
+
+=== RT-09 (prueba NEGATIVA, no vulnerable): ataque alg=none ===
+Se construyo un JWT con header alg=none y sin firma.
+Resultado: HTTP 401 Unauthorized -- Authlib/jose rechaza el token correctamente.
+CONCLUSION: el validador del cliente NO es vulnerable a confusion de algoritmo alg=none.

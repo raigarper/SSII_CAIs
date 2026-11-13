@@ -1,0 +1,6 @@
+=== Incidencia detectada durante la Fase 4 (verificacion) y corregida ===
+La cabecera Content-Security-Policy: default-src 'self' (CODE-07) bloqueaba
+los onclick en linea y el <script> interno de portal.html, dejando los
+botones de la API sin funcionar para el usuario legitimo.
+Correccion: se movio el JS a static/portal.js (script externo, mismo origen)
+y se sustituyeron los onclick por addEventListener. Verificado tras el cambio.

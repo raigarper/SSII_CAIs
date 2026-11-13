@@ -1,0 +1,38 @@
+Simulamos una arquitectura con dos aplicaciones independientes: el Servidor de Identidad en el puerto 8000 y el Portal Médico en el puerto 8001
+
+Ficheros que debes tener:
+
+CAI3-Parte1/
+├── requirements.txt
+├── auth_server.py
+├── auth_client.py
+└── templates/
+    ├── setup_mfa.html
+    ├── login.html
+    └── portal.html
+
+Paso 1: Crear el entorno virtual e instalar dependencias
+
+a) En Windows (PowerShell o CMD)
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+
+b) En Linux (Bash)
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+
+Paso 2: Arrancar los dos servidores (Necesitas 2 terminales)
+
+a. Terminal 1 — Arrancar el Servidor de Autenticación (auth_server.py):
+Con el entorno virtual (venv) activado: python auth_server.py
+b. Terminal 2 — Arrancar el Portal Médico (auth_client.py): python auth_client.py
+
+Paso 3: Acceder al laboratorio
+
+1. Abre tu navegador y entra en la dirección: http://localhost:8001
+2. Haz clic en "Configurar FreeOTP" y escanea el código QR con la aplicación FreeOTP en tu teléfono móvil.
+3. Vuelve al Portal Médico (http://localhost:8001), pulsa "Iniciar sesión con OAuth 2.0 + FreeOTP" e introduce el código de 6 dígitos que genera tu móvil.
+
+(Importante: No uses 127.0.0.1 en un sitio y localhost en otro, ya que las cookies de sesión OAuth 2.0 pueden fallar por diferencia de dominio).

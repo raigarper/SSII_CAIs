@@ -1,2 +1,11 @@
 CAI_2.2/jdk-*
 *.tar.gz
+*/venv/
+*/venv/*
+**/venv/
+**/venv/*
+**/evidencias/pruebas_despues/herramientas_venv/
+**/evidencias/pruebas_despues/herramientas_venv/*
+**/__pycache__/
+**/__pycache__/*
+*.pyc

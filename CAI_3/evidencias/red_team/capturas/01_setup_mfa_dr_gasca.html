@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Configurar FreeOTP - dr_gasca</title>
+</head>
+<body>
+    <h2>1. Vincula tu dispositivo con FreeOTP</h2>
+    
+    <p>
+        Seleccionar cuenta: 
+        <a href="/setup-mfa?user=rocio"><button type="button">Rocio (Paciente)</button></a>
+        <a href="/setup-mfa?user=dr_gasca"><button type="button">Dr. Gasca (Médico)</button></a>
+    </p>
+
+    <p>Configurando autenticación para el usuario: <strong>dr_gasca</strong></p>
+    <p>Escanea este código QR con la aplicación <strong>FreeOTP</strong> en tu móvil:</p>
+    
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeoAAAHqAQAAAADjFjCXAAAEPUlEQVR4nO2cTYrjOhCAvxobeinDO0Afxb7BHGnom9lH6QM0SMuATM1Cv0nDW8Qe0iFVCyd29KEYilKpfiTKAdl+HaHBcMMNN9xwww033PBzcckyIksYEZERNhGRJYiwyQiEfJtkOW92w18NR1VVmVVV1Q/K7AfVFWD2AAyaLrMf0pCOWJ/63Q1/FF60zgOzHxRcTAqXtEs96Ooi4CJJMZMSmtYZfhaua3hTXV0krbWLizB/jkB4U1n+7eyGvyYuf/wuIhOwvV9EP6ZBZUnG7SJp6f13sxv+GviYP50CAXR7V9h+D5ous99HhQjZw4M+rvzU7274o/Ds12XJm4b/u5Sh5tcZfrckW9fMlxJ2SVuKLLuwTQPgLpJt4mmzG/6aeI2cFDWbNRZD5mL3q64MqqurG16zdYbfLSk+skJSpBQgyQoX0RXI4ZM0fujU0bTO8Puk+HXZaUuxuax/2a4lravj2hDTOsMP4Kp6EV2dqvxJceBddGXPzxYGZZvys9NnN/zV8LJUpsQD6Oq+u3TafL1E2Apr+CHpdxPd4hppewigZF9x2t2a1hl+BN+mQVU/c2lJsnofUwkLry7CNu3C/CnCrBerOTH8iHR7WJxqCpCk7WtbZv2gV6YP200YfkRu43VZipnTpmuu1jdZ5MTwY9JXOpUAHRSDV6qfSnAlfXNqfp3hR+R2l5CCcT5X0FFr6VpVZ/vVtM7wu6TUnAQB3JcogG4TopsMUQmTKOG/SHr2O5IzsmfMbvhr4te2DpqFSyss5GRYd8meoNk6ww/hOWjiVCGMMPtdZAkjTfVyHUrRzuz//YQ/b/jT4WWFZRclCLq9RxTiqIQhQpgA9zXK7FGZ/T7qtgxFFZ/63Q1/FF4zYjX75anLbM1+lY1s1zxmK6zhR/HZ7wLhTdkmYJtqZxjA9h5R9bXcszqBP+PPG/5seJebKAG6XAJQ4iV8t3/l1myd4fdJHyUuLdal2bpGiWnb1z5VZlpn+H3SIiflW19B3Hy9ljlLCTKzdYbfLy2/nxMPLV5Xn+UERVHH1TJihh+TLubbeXi+1nfSqtrj98FP/e6GPwrvV9iVmzNNbroq6hE7rbT4qd/d8EfhV13YJWjXSlDKkFgvdV9rWmf43dKsWd4leCi3dch1279VsBt+Bl4WzdY80dpzBk0HOwF9V8WJsxv+mng7qzN1UHzU22ThwgipqjOM9fa02Q1/UTxtSz0wf4rIkuo7LyKSumChJMMizGr1dYafgYd61HAK1YEs4S2tpuk4O0I+q5jaVfFT/rzhz45v0y6pBKBPS1wEXD4eQD+m3ToTDT8g4829EiYE52ETAOdVcF+QLdw+9tRTv7vhj8ZLlLjILsXX2yWnxYLkYqhZrdLJ8EPSR4lrurXVMmk5l73VBlhnouGnrLD9WZ257bU8cBGtI/Rq7PHZDTfccMMNN9xwww0/C/8LqOs9GTfRidYAAAAASUVORK5CYII=" alt="QR FreeOTP de dr_gasca">
+    <p><small>Valor almacenado en BD:<br><code>XGBFGLJM7X4FTJ6YQ7H4E772M6Q5ZMGE</code></small></p>
+    
+    <script>
+        document.getElementById('link-portal').href = `http://${window.location.hostname}:8001`;
+    </script>
+</body>
+</html>
+
